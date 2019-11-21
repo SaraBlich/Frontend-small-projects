@@ -1,0 +1,14 @@
+function dropdownMenu()
+{
+  
+  var el = document.getElementById('dropdownClick');
+  if(el.className === "leftTopnav")
+  {
+    el.className += " responsive";
+
+
+  }
+  else {
+    el.className = "leftTopnav";
+  }
+}
