@@ -1,0 +1,99 @@
+nav, header, footer
+{
+  display: block;
+}
+
+body
+{
+  line-height: 20px;
+  margin:0;
+}
+
+nav
+{
+  width:100%;
+  margin: 0;
+}
+
+nav ul
+{
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.leftTopnav li
+{
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+}
+
+.leftTopnav li.rightTopnav
+{
+  text-decoration: none;
+  list-style-type: none;
+  float: right;
+}
+
+.leftTopnav li a
+{
+  display: block;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+  text-decoration: none;
+}
+
+.leftTopnav li a:hover
+{
+  background-color: #A600A4;
+  color: #efefef;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdownIcon
+{
+  display: none;
+}
+
+/*Mobile version*/
+@media screen and (max-width:600px)
+{
+  .leftTopnav li:not(:nth-child(1))
+  {
+    display:none;
+  }
+  ul.leftTopnav li.dropdownIcon
+  {
+    display: block;
+    float:right;
+  }
+
+  ul.leftTopnav.responsive
+  {
+    position: relative;
+  }
+
+  ul.leftTopnav.responsive li
+  {
+    display: inline;
+    float: none;
+  }
+  ul.leftTopnav.responsive li a
+  {
+    display: block;
+    text-align: left;
+  }
+
+  ul.leftTopnav.responsive li.dropdownIcon
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
