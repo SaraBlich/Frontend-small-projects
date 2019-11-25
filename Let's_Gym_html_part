@@ -6,11 +6,12 @@
   <meta name = "description" content = "Motivation + exercise = succes! Looking for some hint about working out, would you like to keep up with our newest posts? Sign in to Let's gym! ">
   <meta name = "keywords" content = "gym, blog, motivation, hints, help, workout" >
 
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "website.css">
-  <script src = "dropdown.js"></script>
+  <script src = "dropdown.js" ></script>
 
 </head>
-<body>
+<body onload="clockCountdown()">
   <nav>
     <ul class = "leftTopnav" id = "dropdownClick">
       <li><a href = "#home">Home</a></li>
@@ -22,8 +23,43 @@
       <li class = "dropdownIcon" ><a href="#" onclick = "dropdownMenu()">&#9776;</a></li>
     </ul>
   </nav>
-  <div class = "container">
-    
+  <div class = "container" id = "imagebox">
+    <div class = "userbox">
+
+      <form>
+
+
+        <input type = "text" placeholder = "login" onfocus = "this.placeholder = ''" onblur = "this.placeholder = 'login' ">
+
+
+
+        <input type = "password" placeholder = "password" onfocus = "this.placeholder = ''" onblur = "this.placeholder = 'password'">
+
+
+        <input type = "submit" value = "SIGN IN" >
+
+      </form>
+
+    </div>
+
+    <div id="to" class = "timebox">
+      <div class = "title">
+      Don't wait! You have still much time until 1<sup>st</sup> January! <br/><br/></div>
+      <div id = "months" class = "shelf"></div>
+      <div id = "days" class = "shelf"></div>
+      <div id = "hours" class = "shelf"></div>
+      <div id = "minutes" class = "shelf"></div>
+      <div id = "seconds" class = "shelf"></div>
+      <div style = "clear:both;"></div>
+      <div id = "months" class = "shelf2">months</div>
+      <div id = "days" class = "shelf2">days</div>
+      <div id = "hours" class = "shelf2">hours</div>
+      <div id = "minutes" class = "shelf2">minutes</div>
+      <div id = "seconds" class = "shelf2">seconds</div>
+      <div style = "clear:both;"></div>
+
+    </div>
+
   </div>
   <srcipt src = "dropdown.js"></script>
 
