@@ -18,16 +18,51 @@ body
   }
 
 
+  .logo
+  {
+    width: 100%;
+    background-color: #360539;
+    margin: 0;
+    padding: 5px;
+    height: 150px;
+    text-shadow:
+	2px 2px 0 #eee,
+	-2px 2px 0 #eee,
+	-2px -2px 0 #eee,
+	2px -2px 0 #eee;
+  }
+
+  .logo img
+  {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-right: 70px;
+
+  }
+
+
+  .logo h1
+  {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-top: 65px;
+  }
+
+
 /*NAV BAR*/
 nav
 {
   width:100%;
   margin: 0;
+  position:sticky;
 
 }
 
 nav ul
 {
+  
   background-color: #eee;
   overflow: hidden;
   margin: 0;
@@ -68,7 +103,7 @@ box-shadow: 0px 0px 8px 10px rgba(150,142,150,1);
 
 .leftTopnav li a:hover
 {
-  background-color: #721c78;
+  background-color: #2E0432;
   color: #efefef;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -118,12 +153,13 @@ box-shadow: 0px 0px 8px 10px rgba(150,142,150,1);
 
 }
 
-#imagebox
+#home
 {
  background-image: url("to.jpg");
- /*, linear-gradient(#721c78, #f67eeb);*/
+ / linear-gradient(#721c78, #f67eeb);*/
  height: 500px;
  background-size: cover;
+ background-attachment: fixed;
 
 }
 
@@ -138,6 +174,7 @@ box-shadow: 0px 0px 8px 10px rgba(150,142,150,1);
   padding:50px;
   font-family: 'Bitter', serif;
   margin-left: 50px;
+  margin-bottom: 40px;
 
   -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
   -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
@@ -213,6 +250,9 @@ input[type=submit]:focus{
   text-align: center;
   height: 285px;
   font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+
 
 
 
@@ -228,10 +268,8 @@ input[type=submit]:focus{
   margin-right: auto;
   text-align: center;
   margin-top: 50px;
-  opacity: 70%;
 }
 
-/*clock containers*/
 .shelf
 {
   font-size: 30px;
@@ -250,8 +288,6 @@ input[type=submit]:focus{
   box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
   float:left;
 }
-
-/*underlines - clock timeout */
 .shelf2{
   font-size: 15px;
   display: inline-block;
@@ -265,3 +301,156 @@ input[type=submit]:focus{
   padding-left: 20px;
 }
 
+#imageslider
+{
+  width: 600px;
+  margin-left: 50px;
+  margin-top:60px;
+
+}
+
+#entry
+{
+  float:right;
+  width: 560px;
+  height:244px;
+
+  background-color: #eee;
+  font-family: 'Bitter', serif;
+  margin-right: 100px;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  line-height: 40px;
+
+
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
+  box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.8);
+
+}
+
+#newest
+{
+  background-color: #eee;
+  margin: 0;
+
+  min-height: 500px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+
+.news h1
+{
+  color: #620061;
+  font-size: 40px;
+  opacity: 1;
+}
+.news
+{
+  padding: 40px;
+  opacity:100%;
+
+
+}
+
+.news p
+{
+  font-size: 20px;
+}
+.commentsimg
+{
+  float:left;
+  width: 90px;
+	height: 90px;
+  text-align: center;
+  margin-top: 20px;
+
+
+}
+.commentstxt
+{
+  float:left;
+  display: inline-block;
+	width: 900px;
+	font-size: 15px;
+  text-align: justify;
+  opacity:100%
+
+}
+
+.commentstxt h2
+{
+  font-size: 15px;
+
+}
+.commentstxt p
+{
+  font-size: 15px;
+  text-align: justify;
+
+}
+
+.comment1, .comment2, .comment3
+{
+  float: left;
+}
+
+#about
+{
+  margin-left: 0;
+  margin-left:0;
+  margin-top: 40px;
+  margin-bottom:40px;
+
+  background-color: #37053B;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  height:500px;
+  width:100%
+}
+
+.aboutTxt
+{
+  opacity:100%;
+  width:30%;
+  padding: 50px;
+  float:left;
+}
+
+.aboutTxt h1
+{
+  color: #eee;
+  font-size: 30px;
+  text-shadow: 1px 1px 17px rgba(150, 150, 150, 1);
+}
+
+.aboutTxt p
+{
+  font-size: 20px;
+  color: #eee;
+  text-align: justify;
+  width: 400px;
+  line-height: 30px;
+  text-shadow: 1px 1px 17px rgba(150, 150, 150, 1);
+}
+
+.trainersPhoto
+{
+  float:left;
+  width:100px;
+  height: 100px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.sticky
+{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
