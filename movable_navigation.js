@@ -24,8 +24,3 @@ $(document).ready(function()
   stickyNav(); // function call during scrolling
 });
 });
-
-
-
-
-)
