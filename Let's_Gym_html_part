@@ -6,24 +6,64 @@
   <meta name = "description" content = "Motivation + exercise = succes! Looking for some hint about working out, would you like to keep up with our newest posts? Sign in to Let's gym! ">
   <meta name = "keywords" content = "gym, blog, motivation, hints, help, workout" >
 
+  <!-- ////////////////////////////////////////////////CSS-STYLES////////////////////////////////////////////////////////////-->
+
   <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "website.css">
+
+  <!--//////////////////////////////////////////////////FONTELLO//////////////////////////////////////////////////////////////-->
+
+   <link href = "fontello/css/fontello.css" rel = "stylesheet">
+
+  <!--///////////////////////////////////////////////////JQUERY///////////////////////////////////////////////////////////////-->
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src = "scrollTo/jquery.scrollTo.min.js"></script>
+
+
+
+  <!--//////////////////////////////////////////////////JAVASCRIPT////////////////////////////////////////////////////////////-->
+  <script src = "scrollTo-gym.js"></script>
   <script src = "dropdown.js" ></script>
+  <script src = "image_slider.js"></script>
+  <script src = "movable_navigaton.js"></script>
+
+
+  <!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
 
 </head>
-<body onload="clockCountdown()">
+<body onload="clockCountdown(); changeImage()">
+  <div class = "logo">
+    <h1 style = "float:left;">Let's Gym!</h1> <div class = "imagelogo" style = "float:right;" ><img src = "logo/gym.png"/></div><div style = "clear:both;"></div>
+  </div>
   <nav>
+    <div class = "nav">
     <ul class = "leftTopnav" id = "dropdownClick">
       <li><a href = "#home">Home</a></li>
-      <li><a href = "#about">News</a></li>
+      <li><a id = "aboutId" href = "#">About</a></li>
+      <li><a id = "newsId" href = "#">News</a></li>
       <li><a href = "#contact">Contact</a></li>
-      <li><a href = "#about">About</a></li>
+      <li><a href = "#forum">Forum</a></li>
+      <li><a href = "#faq">FAQ</a></li>
       <li class = "rightTopnav"><a href = "#signup">Sign up</a></li>
       <li class = "rightTopnav"><a href = "#signin">Sign in</a></li>
       <li class = "dropdownIcon" ><a href="#" onclick = "dropdownMenu()">&#9776;</a></li>
     </ul>
+  </div>
   </nav>
-  <div class = "container" id = "imagebox">
+
+  <!--/////////////END-OF-NAV///////////////-->
+
+  <div class = "container" id = "home">
+    <a href = "#" class = "scrollup"></a>
+    <section>
     <div class = "userbox">
 
       <form>
@@ -42,9 +82,14 @@
 
     </div>
 
+    <div id = "entry">
+      <p> <i>Success isn't always about 'Greatness', it's about consistency.</i><br><br> - Dwayne The Rock Johnson
+
+    </div>
+
     <div id="to" class = "timebox">
       <div class = "title">
-      Don't wait! You have still much time until 1<sup>st</sup> January! <br/><br/></div>
+      Our membership promo starts soon!<br> Till 1<sup>st</sup> January left: <br/><br/></div>
       <div id = "months" class = "shelf"></div>
       <div id = "days" class = "shelf"></div>
       <div id = "hours" class = "shelf"></div>
@@ -60,8 +105,75 @@
 
     </div>
 
-  </div>
-  <srcipt src = "dropdown.js"></script>
+    <div id = "imageslider">
+    </div>
+
+    <div style = "clear:both;"></div>
+  </section>
+
+  <section id = "about">
+    <div id = "aboutHere" class = "aboutTxt">
+      <h1>About Let's Gym</h1>
+      <p>At <i>Let's Gym</i> you will find people that have chosen fit and healthy lifestyle! You are welcome to comment, talk and take hints from our Elite Gym Lovers - people who are certified trainers and dieteticians. Get Membership for many dicounts to proffesional brands and mobile subscription! Looking for some hints about working out, would you like to keep up with our newest posts? Sign in to Let's gym! <i class = "icon-up-hand"></i></p>
+    </div>
+    <div class = trainersPhoto>
+      <img src = "trainers/trainer.jpg">
+    </div>
+    <div style = "clear:both;"></div>
+  </section>
+
+  <section id = "newest">
+    <div id = "news" class = "news" >
+      <header>
+        <h1> What's new? </h1>
+        <p>Check out our latest blog topics, comments and on. Feel free to discuss - just  remember to sign in! If you want to keep up with new posts, follow us on youtube, twitter, instagram or facebook! </p>
+      </header>
+
+      <article>
+      <div class = "comments">
+
+        <div class = "comment1">
+          <div class = "commentsimg">
+            <img src = "user/user.jpg" alt = "user">
+          </div>
+          <div class = "commentstxt">
+            <h2>Push ups - How to do them well?  &nbsp  &nbsp &nbsp 27.11.2019 | 00:10</h2>
+            <p>One day at the gym, me and my friend were doing push ups. To be honest, it didin't went out really well as we started arguing about our technics. It differs a lot. Any hints? Video of my workout loaded!</p>
+          </div>
+          <div style = "clear:both;"></div>
+        </div>
+
+        <div class = "comment2">
+          <div class = "commentsimg">
+            <img src = "user/user.jpg" alt = "user">
+          </div>
+        <div class = "commentstxt">
+          <h2>Squads - help!! &nbsp  &nbsp &nbsp 12.11.2019 | 12:35</h2>
+          <p>Hello there. I'm new here and also I have started working out not so long ago, any hints? Thanks!  </p>
+        </div>
+      </div>
+      <div style = "clear:both;"></div>
+      <div class = "comment3">
+        <div class = "commentsimg">
+          <img src = "user/user.jpg" alt = "user">
+       </div>
+        <div class = "commentstxt">
+          <h2>Push ups - How to do them well? &nbsp  &nbsp &nbsp 09.11.2019 | 14:55</h2>
+          <p>One day at the gym, me and my friend were doing push ups. To be honest, it didin't went out really well as we started arguing about our technics. It differs a lot. Any hints? Video of my workout loaded!</p>
+      </div>
+      <div style = "clear:both;"></div>
+    </div>
+    <div style = "clear:both;"></div>
+</article>
+      </div>
+    </div>
+  </section>
+
+
+  <script src = "image_slider.js"></script>
+  <script src = "dropdown.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 
 </body>
 </html>
