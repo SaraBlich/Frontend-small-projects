@@ -62,7 +62,7 @@ nav
 
 nav ul
 {
-  
+
   background-color: #eee;
   overflow: hidden;
   margin: 0;
@@ -454,3 +454,71 @@ input[type=submit]:focus{
   top: 0;
   z-index: 100;
 }
+
+#contact
+{
+  width: 100%;
+  margin:0;
+  height: 1200px;
+  background-color: #2F2F37;
+  color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid #D3EFC2;
+  border-bottom: 2px solid #D3EFC2;
+
+}
+
+#contact h1
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #C5EFB6;
+  font-size: 40px;
+  text-shadow: 1px 1px 17px rgba(150, 150, 150, 1);
+}
+
+.contacttxt
+{
+  text-align: justify;
+  color: #eee;
+  font-size: 20px;
+  width: 1100px;
+  padding:20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  text-shadow: none;
+}
+#map
+{
+
+  margin-left:40px;
+  float:left;
+  padding: 20px;
+
+}
+
+.adress
+{
+  float:left;
+  margin-right: 50px;
+  margin-left: 40px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  width: 450px;
+  color: #eee;
+  text-shadow: none;
+  line-height: 40px;
+  padding: 10px;
+
+
+}
+.adress h1
+{
+  text-align: center;
+  font-size: 10px;
+}
+
