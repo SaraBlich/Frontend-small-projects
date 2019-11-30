@@ -6,6 +6,8 @@
   <meta name = "description" content = "Motivation + exercise = succes! Looking for some hint about working out, would you like to keep up with our newest posts? Sign in to Let's gym! ">
   <meta name = "keywords" content = "gym, blog, motivation, hints, help, workout" >
 
+
+
   <!-- ////////////////////////////////////////////////CSS-STYLES////////////////////////////////////////////////////////////-->
 
   <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
@@ -28,10 +30,15 @@
 
 
   <!--//////////////////////////////////////////////////JAVASCRIPT////////////////////////////////////////////////////////////-->
+
   <script src = "scrollTo-gym.js"></script>
   <script src = "dropdown.js" ></script>
   <script src = "image_slider.js"></script>
   <script src = "movable_navigaton.js"></script>
+
+  <!--/////////////////////////////////////////////JAVASCRIPT-API-MAPS////////////////////////////////////////////////////////-->
+
+    <!--   <script src = "google-map.js"></script>   file not working - keys errors. Might be also a problem with body onload functions. After all iframe used -->
 
 
   <!--[if lt IE 9]>
@@ -39,7 +46,7 @@
 	<![endif]-->
 
 </head>
-<body onload="clockCountdown(); changeImage()">
+<body onload="clockCountdown(); changeImage();">
   <div class = "logo">
     <h1 style = "float:left;">Let's Gym!</h1> <div class = "imagelogo" style = "float:right;" ><img src = "logo/gym.png"/></div><div style = "clear:both;"></div>
   </div>
@@ -49,7 +56,7 @@
       <li><a href = "#home">Home</a></li>
       <li><a id = "aboutId" href = "#">About</a></li>
       <li><a id = "newsId" href = "#">News</a></li>
-      <li><a href = "#contact">Contact</a></li>
+      <li><a id = "contactId" href = "#">Contact</a></li>
       <li><a href = "#forum">Forum</a></li>
       <li><a href = "#faq">FAQ</a></li>
       <li class = "rightTopnav"><a href = "#signup">Sign up</a></li>
@@ -169,6 +176,32 @@
     </div>
   </section>
 
+  <section>
+    <div id = "contact">
+      <h1>Contact<h1>
+      <div class = "contacttxt">
+        <p> On monday and thursday from 8 a.m. till 4 p.m. you have possibility to meet our best Elite Gym Lover trainers at Platinium Bratyslawska. </p>
+      </div>
+
+      <div id = "map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.134838758637!2d19.933834415718096!3d50.08376227942645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a566d539ef5%3A0xa991f7eab97f825a!2sFitness%20Platinium%C2%AE%20Bratys%C5%82awska!5e0!3m2!1spl!2spl!4v1575134191923!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:2px solid black;" allowfullscreen="" id = "mapimage"></iframe>
+      </div>
+
+      <div class = "adress">
+      <h1>Adress</h1>
+      Bratyslawska 4, 31-201 Krakow, Poland
+      Opened: Mon-Fri 6:30 a.m. - 11 p.m. | Sat-Sun 7:00 a.m. - 22 p.m.
+      Phone: 12 312 03 00
+      e-mail: recepcja.bratyslawska@fitnessplatinium.pl <br/><br/>
+    </div>
+    <div style = "clear:both;"></div>
+
+    <div class = "socials">
+    <p>Feel free to contact us also via social media!</p>
+  </div>
+</div>
+</section>
+
 
   <script src = "image_slider.js"></script>
   <script src = "dropdown.js"></script>
@@ -177,3 +210,4 @@
 
 </body>
 </html>
+
